@@ -1,0 +1,138 @@
+svg .seat:hover{
+  fill: red;
+  cursor:pointer;
+}
+
+/*svg:hover #blob{
+  fill: blue;
+}*/
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+a {
+	color: #b71a4c;
+}
+.front-indicator {
+	width: 35%;
+	margin: 5px 32px 15px 32px;
+	background-color: #f6f6f6;	
+	color: #adadad;
+	text-align: center;
+	padding: 3px;
+	border-radius: 5px;
+}
+.wrapper {
+/* 	width: 400px; */
+}
+.container {
+	margin: 0 auto;
+/* 	width: 500px; */
+	text-align: left;
+}
+.seat-stat-wrapper {
+  width: 100%;
+}
+#legend {
+  width: 49%;
+  margin: 0 auto;
+  float: left;
+}
+.booking-details {
+  display: inline-block;
+	text-align: right;
+	font-size: 12px;
+  width: 49%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 550px) {
+  #legend {
+    width: 100%;
+  }
+  .booking-details {
+    width: 100%;
+    text-align: left;
+  }
+}
+.booking-details h2 {
+	margin: 25px 0 20px 0;
+	font-size: 17px;
+}
+.booking-details h3 {
+	margin: 5px 5px 0 0;
+	font-size: 14px;
+}
+div.seatCharts-cell {
+	color: #182C4E;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	
+}
+div.seatCharts-seat {
+	color: #FFFFFF;
+	cursor: pointer;	
+}
+div.seatCharts-row {
+	height: 35px;
+}
+div.seatCharts-seat.available {
+	background-color: #B9DEA0;
+
+}
+div.seatCharts-seat.available.vip-class {
+	background-color: #3a78c3;
+}
+div.seatCharts-seat.available.standard-ground-class {
+	background-color: orange;
+}
+div.seatCharts-seat.available.standard-balcony-class {
+	background-color: purple;
+}
+div.seatCharts-seat.available.student-class {
+	background-color: blue;
+}
+div.seatCharts-seat.focused {
+	background-color: #76B474;
+}
+div.seatCharts-seat.selected {
+	background-color: #E6CAC4;
+}
+div.seatCharts-seat.unavailable {
+	background-color: #472B34;
+}
+.seat-chart-wrapper {
+/*   width: 600px; */
+  overflow: scroll;
+}
+div.seatCharts-container {
+	border-right: 1px dotted #adadad;
+	width: 1767px;
+	padding: 20px;
+  
+/* 	float: left; */
+}
+div.seatCharts-legend {
+  display: inline-block;
+}
+
+div.seatCharts-legend li {
+  text-align: left;
+}
+
+ul.seatCharts-legendList {
+	padding-left: 0px;
+}
+span.seatCharts-legendDescription {
+	margin-left: 5px;
+	line-height: 30px;
+}
+.checkout-button {
+/* 	display: block; */
+	margin: 10px 0;
+	font-size: 14px;
+}
+#selected-seats {
+	overflow-y: scroll;
+	overflow-x: none;
+}
